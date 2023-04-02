@@ -29,8 +29,7 @@ body {
   height: 100%;
   background-color: var(--clr-light-gray-blue) !important;
   -webkit-font-smoothing: antialiased;
-  padding: 2rem 1rem;
-}
+  }
 
 // Improve media defaults
 
@@ -62,6 +61,10 @@ h5,
 h6 {
   overflow-wrap: break-word;
   margin: 0 !important;
+}
+body{
+  padding: 2rem 1rem;
+
 }
 .parent_grid {
   display: grid;
@@ -138,4 +141,30 @@ h6 {
 }
 .patrick {
   background-color: var(--clr-dark-blue) !important;
+}
+
+@media only screen and (min-width:48px) {
+  body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }  
+  .parent_grid{
+      max-width: 85rem;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+    }
+
+    .daniel{
+      grid-column: span 2;
+    }
+    .kira{
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .patrick{
+      grid-column: span 2;
+    }
 }
