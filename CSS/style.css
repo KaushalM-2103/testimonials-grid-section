@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --clr-mod-violet: hsl(263, 55%, 52%);
+  --clr-gray-blue: hsl(217, 19%, 35%);
+  --clr-dark-blue: hsl(217, 30%, 14%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(0, 0%, 81%);
+  --clr-light-gray-blue: hsl(210, 46%, 95%);
+  --fw-500: 500;
+  --fw-600: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 13px;
+  height: 100%;
+  background-color: var(--clr-light-gray-blue) !important;
+  -webkit-font-smoothing: antialiased;
+  padding: 2rem 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0 !important;
+}
+
+.parent_grid {
+  display: grid;
+  gap: 2rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 0.5px;
+}
+.parent_grid .child_grid {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 8px 9px hsla(0, 0%, 0%, 0.152);
+}
+.parent_grid .child_grid .user_profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.parent_grid .child_grid .user_profile img {
+  width: 2em;
+  height: 2em;
+}
+.parent_grid .child_grid .user_profile .user_detail {
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+.parent_grid .child_grid .user_profile .user_detail p {
+  font-size: 0.9rem;
+}
+.parent_grid .child_grid h1 {
+  margin-bottom: 1.5rem !important;
+  font-size: 1.5rem;
+  font-weight: var(--fw-600);
+}
+.parent_grid .child_grid .child_grid p {
+  margin-bottom: 1rem !important;
+}
+
+.daniel h1,
+.daniel h6,
+.jonathan h1,
+.jonathan h6,
+.patrick h1,
+.patrick h6 {
+  color: var(--clr-white);
+}
+.daniel p,
+.jonathan p,
+.patrick p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.jeanette h1,
+.jeanette h6,
+.kira h1,
+.kira h6 {
+  color: var(--clr-dark-blue);
+}
+.jeanette p,
+.kira p {
+  color: hsla(217, 30%, 14%, 0.5);
+}
+
+.daniel {
+  background: var(--clr-mod-violet) url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg) no-repeat 85% top !important;
+}
+
+.jonathan {
+  background-color: var(--clr-gray-blue) !important;
+}
+
+.patrick {
+  background-color: var(--clr-dark-blue) !important;
+}/*# sourceMappingURL=style.css.map */
