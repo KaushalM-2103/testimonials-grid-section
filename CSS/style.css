@@ -131,14 +131,14 @@ body {
   background-color: var(--clr-dark-blue) !important;
 }
 
-@media only screen and (min-width: 48px) {
+@media only screen and (min-width: 480px) {
   body {
     display: grid;
     justify-content: center;
     align-items: center;
   }
   .parent_grid {
-    max-width: 85rem;
+    width: 85rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }

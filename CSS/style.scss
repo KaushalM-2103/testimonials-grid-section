@@ -29,7 +29,7 @@ body {
   height: 100%;
   background-color: var(--clr-light-gray-blue) !important;
   -webkit-font-smoothing: antialiased;
-  }
+}
 
 // Improve media defaults
 
@@ -62,9 +62,8 @@ h6 {
   overflow-wrap: break-word;
   margin: 0 !important;
 }
-body{
+body {
   padding: 2rem 1rem;
-
 }
 .parent_grid {
   display: grid;
@@ -97,7 +96,7 @@ body{
         }
       }
     }
-     h1 {
+    h1 {
       margin-bottom: 1.5rem !important;
       font-size: 1.5rem;
       font-weight: var(--fw-600);
@@ -143,28 +142,28 @@ body{
   background-color: var(--clr-dark-blue) !important;
 }
 
-@media only screen and (min-width:48px) {
-  body{
+@media only screen and (min-width: 480px) {
+  body {
     display: grid;
     justify-content: center;
     align-items: center;
-  }  
-  .parent_grid{
-      max-width: 85rem;
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-    }
+  }
+  .parent_grid {
+    width: 85rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .daniel{
-      grid-column: span 2;
-    }
-    .kira{
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 3;
-    }
-    .patrick{
-      grid-column: span 2;
-    }
+  .daniel {
+    grid-column: span 2;
+  }
+  .kira {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .patrick {
+    grid-column: span 2;
+  }
 }
